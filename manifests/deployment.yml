@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: doydoydoypipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: doydoydoypipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: doydoydoypipelinesjavascriptdocker 
+          image: mycontainerregistry09.azurecr.io/doydoydoypipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
